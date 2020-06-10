@@ -11,6 +11,10 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { SectionHealthComponent } from '../section/section-health/section-health.component';
+import { SectionOrdersComponent } from '../section/section-orders/section-orders.component';
+import { SectionSalesComponent } from '../section/section-sales/section-sales.component';
+import { appRoutes } from '../routes'
 
 @NgModule({
   declarations: [
@@ -20,17 +24,16 @@ import { SideBarComponent } from './side-bar/side-bar.component';
     CounterComponent,
     FetchDataComponent,
     NavBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    SectionHealthComponent,
+    SectionOrdersComponent,
+    SectionSalesComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'counter', component: CounterComponent },
-      { path: 'fetch-data', component: FetchDataComponent },
-    ])
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

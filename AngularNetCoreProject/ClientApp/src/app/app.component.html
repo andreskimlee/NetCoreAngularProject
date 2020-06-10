@@ -2,6 +2,8 @@
 <div class="container-fluid">
     <div class="row" id="mainContent">
         <app-side-bar class="col-sm-3 col-md-2 d-none d-sm-block sidebar" id="sidebar"></app-side-bar>
-        <div class="col-sm-9" id="dashboard"></div>
+        <div class="col-sm-9" id="dashboard">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
