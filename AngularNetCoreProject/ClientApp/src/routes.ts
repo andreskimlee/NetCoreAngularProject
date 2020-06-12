@@ -6,7 +6,7 @@ import { SectionHealthComponent } from './section/section-health/section-health.
 export const appRoutes: Routes = [
     { path: "sales", component: SectionSalesComponent },
     { path: "orders", component: SectionOrdersComponent },
-    { path: "sales", component: SectionHealthComponent },
+    { path: "health", component: SectionHealthComponent },
     { path: '', redirectTo: './sales', pathMatch: 'full' }
     // pathMatch is pretty much equivalent to exact path. 
 ]
