@@ -27,3 +27,30 @@ body {
   color: #f7fff7;
   height: 100%; 
 }
+
+.card-theme {
+  background: #191f26;
+  border:none;
+  border-radius: 2px;
+
+}
+
+.card-header {
+  color: #eeeeee;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: 12px; 
+}
+
+.card-body-theme {
+  background-color: #494f56;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-container {
+  padding: 30px;
+}
